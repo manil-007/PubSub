@@ -38,16 +38,19 @@ This repository contains a simple Publisher-Subscriber (PubSub) system implement
 
    ```bash
    python3 -m src.test.publisher
+   
    ```
 2. **Run the Subscriber**: In another terminal, run the subscriber script to receive messages from the PubSub system.
 
-  ```bash
-  python3 -m src.test.subscriber
-  ```
+   ```bash
+   python3 -m src.test.subscriber
+   
+   ```
 
 3. **Checking Redis Database (Optional)**: You can use the redis-cli tool to interact with the Redis database and inspect the messages stored in the queues.
 
-  ```bash
-  redis-cli
-  LRANGE <topic> 0 -1
-  ```
+   ```bash
+   redis-cli
+   LRANGE <topic> 0 -1
+   
+   ```
